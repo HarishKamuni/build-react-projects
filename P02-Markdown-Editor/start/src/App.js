@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import Markdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 function App() {
   const [markdown, setMarkdown] = useState('# sup');
@@ -12,7 +13,8 @@ function App() {
       <textarea value={markdown} onChange={handleChange} />
 
       <div className="preview">
-        <Markdown>{markdown}</Markdown>
+        {/* <Markdown>{markdown}</Markdown> */}
+        <Markdown remarkPlugins={[remarkGfm]}>{markdown}</Markdown>
       </div>
     </div>
   );
