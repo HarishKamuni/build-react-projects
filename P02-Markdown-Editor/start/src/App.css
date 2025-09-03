@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
 
 body {
   background: #e8eaf1;
-  font-family: "Hind", Arial, Helvetica, sans-serif;
+  font-family: 'Hind', Arial, Helvetica, sans-serif;
 }
 
 .app {
@@ -25,4 +25,13 @@ textarea {
 .preview {
   padding-left: 20px;
   padding-right: 20px;
+}
+blockquote {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+  border-left: 6px solid blueviolet;
+  background-color: darkseagreen;
+  padding: 1px 10px;
+  border-radius: 5px;
 }
