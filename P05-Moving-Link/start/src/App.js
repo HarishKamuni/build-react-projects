@@ -38,6 +38,7 @@ function App() {
     if (direction === 'down') setY((y) => y + 20);
     if (direction === 'right') setX((x) => x + 20);
   }
+  //Today break
   return (
     <div className="app">
       <canvas ref={canvasRef} />
